@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: silver;
+    height: 100vh;
+}
+
+.username {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid grey;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+div, label, input, button, select {
+    border-radius: 5px;
+}
+
+.fail, .error {
+    background-color: #fcfc5c;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+
+.fail, .error::before {
+    content: 'Warning: ';
+    color: red;
+}
+
+div.success {
+    background-color: lightgreen;
+}
+
+div.success::before {
+    content: 'Congratulations: ';
+    color: darkgreen;
+}
+
+.nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav > img {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    height: 70px;
+    width: 70px;
+}
+
+.nav > div > a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #a1a1a1;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: blue;
+}
+
+button {
+    width: 50%;
+    padding: 5px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 3px 3px 5px 0 rgba(50, 50, 50, 0.75);
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+}
+
+main {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    background: #f5ffff;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, tr {
+    padding: 10px;
+    border: 1px solid #777;
+}
+
+th {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
+}
+
+tr:nth-child(odd) {
+    background: #ebf3f9;
+}
+
+th:first-child {
+    border-left: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
